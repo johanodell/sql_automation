@@ -1,0 +1,13 @@
+--- 
+- name: Solve prereqs for sql installation on the host  
+  hosts: "{{ vm_name }}"
+  become: yes 
+
+  tasks: 
+  - name: Permit mssql traffic in fw on port 1443/tcp
+    firewalld:
+      port: 1443/tcp
+      permanent: yes
+      immediate: yes
+      state: enabled 
+      
