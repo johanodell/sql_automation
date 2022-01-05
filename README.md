@@ -5,7 +5,3 @@ It is quick and dirty for a demo i am working on. The state of the repo is work 
 See workflow below
 
 ![Alt text](images/sql_automation.png?raw=true "high level process")
-
-Work in progress: 
-- add monitoring of sql metrics via performance co-pilot and visualization in grafana 
-- deploy multiple servers in the same process 
