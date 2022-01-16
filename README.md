@@ -13,5 +13,5 @@ My environment looks like below
 
 Do the following steps to setup the central monitoring server with pcp and grafana. 
 
-- Deploy a RHEL-vm
+- Deploy a rhel-vm using the playbook deploy_rhel_on_vsphere.yml
 - Run the playbook called setup_central_monitoringsystem.yml against the new VM. 
