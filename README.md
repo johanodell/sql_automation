@@ -10,3 +10,8 @@ See workflow below
 My environment looks like below
 
 ![Alt text](images/environment.png?raw=true "environment")
+
+Do the following steps to setup the central monitoring server with pcp and grafana. 
+
+- Deploy a RHEL-vm
+- Run the playbook called setup_central_monitoringsystem.yml against the new VM. 
