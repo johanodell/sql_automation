@@ -1,0 +1,9 @@
+- name: ensure remote monitoring is possible
+  hosts: "{{ vm_name }}"
+  tasks:
+
+  - name: Make sure pmproxy is running 
+    service: 
+      name: pmproxy
+      state: started
+      enabled: yes 

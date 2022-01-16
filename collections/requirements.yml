@@ -6,6 +6,11 @@ collections:
   - name: redhatinsights.insights
     src: https://console.redhat.com/api/automation-hub/
 
-  - name: community.vmware.vmware_tag_manager
+  - name: microsoft.sql
+    src: https://console.redhat.com/api/automation-hub/
+
+  - name: community.vmware
     src: https://galaxy.ansible.com
+
+
     
