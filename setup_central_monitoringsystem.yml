@@ -1,0 +1,20 @@
+- name: Setup a central metrics server with grafana and pcp
+  hosts: "{{ vm_name }}"
+  collections:
+    - name: redhat.rhel_system_roles
+  become: yes 
+
+- name: Open Firewall for grafana
+  hosts: "{{ vm_name }}"
+  tasks:
+    - firewalld:
+        service: grafana
+        permanent: yes
+        immediate: yes
+        state: enabled
+
+  roles:
+    - role: performancecopilot.metrics.redhat.rhel_system_roles.private_metrics_subrole_grafana
+    - role: performancecopilot.metrics.pcp
+      vars:
+        pcp_rest_api: yes
