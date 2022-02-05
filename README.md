@@ -5,3 +5,13 @@ It is quick and dirty for a demo i am working on. The state of the repo is work 
 See workflow below
 
 ![Alt text](images/sql_automation_workflow.png?raw=true "high level process")
+
+
+My environment looks like below
+
+![Alt text](images/environment.png?raw=true "environment")
+
+Do the following steps to setup the central monitoring server with pcp and grafana. 
+
+- Deploy a rhel-vm using the playbook deploy_rhel_on_vsphere.yml
+- Run the playbook called setup_central_monitoringsystem.yml against the new VM. 
