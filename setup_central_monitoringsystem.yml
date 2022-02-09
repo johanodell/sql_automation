@@ -18,10 +18,6 @@
   hosts: "{{ vm_name }}"
   roles:
     - redhat.rhel_system_roles.metrics
-      vars: 
-        metrics_graph_service: yes
-        metrics_query_service: yes
-        metrics_from_sql: yes 
-        metrics_retention_days: 7 
+  
     
   
