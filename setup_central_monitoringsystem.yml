@@ -14,8 +14,14 @@
         immediate: yes
         state: enabled
 
+- name: Use metrics systems role to configure grafana  
+  hosts: "{{ vm_name }}"
   roles:
-    - role: performancecopilot.metrics.redhat.rhel_system_roles.private_metrics_subrole_grafana
-    - role: performancecopilot.metrics.pcp
-      vars:
-        pcp_rest_api: yes
+    - redhat.rhel_system_roles.metrics
+      vars: 
+        metrics_graph_service: yes
+        metrics_query_service: yes
+        metrics_from_sql: yes 
+        metrics_retention_days: 7 
+    
+  
