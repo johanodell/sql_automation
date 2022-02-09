@@ -2,7 +2,7 @@
 - name: Setup a central metrics server with grafana and pcp
   hosts: "{{ vm_name }}"
   collections:
-    - name: redhat.rhel_system_roles
+    name: redhat.rhel_system_roles
   become: yes 
 
 - name: Open Firewall for grafana
