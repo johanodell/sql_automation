@@ -1,3 +1,4 @@
+---
 - name: Setup a central metrics server with grafana and pcp
   hosts: "{{ vm_name }}"
   collections:
