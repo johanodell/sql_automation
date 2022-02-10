@@ -15,7 +15,7 @@
         state: enabled
 
 - name: Use metrics systems role to configure grafana  
-  #hosts: "{{ vm_name }}"
+  hosts: "{{ vm_name }}"
   vars:
     metrics_graph_service: yes
     metrics_query_service: yes
