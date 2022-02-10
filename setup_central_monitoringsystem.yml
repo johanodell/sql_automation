@@ -4,18 +4,18 @@
   collections:
     - redhat.rhel_system_roles
   become: yes 
+  
+  tasks: 
 
-- name: Open Firewall for grafana
-  hosts: "{{ vm_name }}"
-  tasks:
-    - firewalld:
+    - name: Open Firewall for grafana
+      firewalld:
         service: grafana
         permanent: yes
         immediate: yes
         state: enabled
 
 - name: Use metrics systems role to configure grafana  
-  hosts: "{{ vm_name }}"
+  #hosts: "{{ vm_name }}"
   vars:
     metrics_graph_service: yes
     metrics_query_service: yes

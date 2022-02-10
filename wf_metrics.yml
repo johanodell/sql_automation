@@ -21,18 +21,19 @@
   vars: 
     metrics_retention_days: 7
     metrics_from_mssql: yes
-    
+
   roles: 
     - redhat.rhel_system_roles.metrics
 
 - name: Use metrics system role to configure Grafana
   hosts: "{{ monitor_name }}" 
   vars:
-    metrics_graph_service: yes
-    metrics_query_service: yes
-    metrics_from_mssql: yes
-    metrics_retention_days: 7
+    #metrics_graph_service: yes
+    #metrics_query_service: yes
+    #metrics_from_mssql: yes
+    #metrics_retention_days: 7
     metrics_monitored_hosts:  ["{{ vm_name }}"]
+    
   roles: 
     - redhat.rhel_system_roles.metrics
 
