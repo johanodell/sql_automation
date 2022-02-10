@@ -10,4 +10,14 @@
       permanent: yes
       immediate: yes
       state: enabled 
+
+  - name: Permit monitoring traffic 
+    firewalld:
+      service: "{{ item }}"
+      permanent: yes
+      immediate: yes
+      state: enabled 
+    with_items:
+      - pmcd
+      - pmproxy
       
