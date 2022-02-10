@@ -14,15 +14,15 @@
         immediate: yes
         state: enabled
 
-    - name: Use metrics systems role to configure grafana  
-      vars:
-      metrics_graph_service: yes
-      metrics_query_service: yes
-      metrics_from_mssql: yes
-      metrics_retention_days: 7
+- name: Use metrics systems role to configure grafana  
+  vars:
+  metrics_graph_service: yes
+  metrics_query_service: yes
+  metrics_from_mssql: yes
+  metrics_retention_days: 7
 
-      roles:
-        - redhat.rhel_system_roles.metrics
+  roles:
+    - redhat.rhel_system_roles.metrics
   
     
   
