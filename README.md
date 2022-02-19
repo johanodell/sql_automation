@@ -11,7 +11,9 @@ My environment looks like below
 
 ![Alt text](images/environment.png?raw=true "environment")
 
-Do the following steps to setup the central monitoring server with pcp and grafana. 
+First, if you already have an Ansible Automation Controller up and running you can add this repo by using the playbook ansible_controller_create_mssql_project.yml
 
-- Deploy a rhel-vm using the playbook deploy_rhel_on_vsphere.yml
+Do the following steps to setup the central monitoring server with pcp and grafana. 
+- If needed deploy a rhel-vm using an existing template or you can use the playbook deploy_rhel_on_vsphere.yml
+
 - Run the playbook called setup_central_monitoringsystem.yml against the new VM. 
