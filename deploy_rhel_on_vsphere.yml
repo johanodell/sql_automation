@@ -33,7 +33,7 @@
       state: poweredon
       wait_for_ip_address: yes 
       
-  - name: "Pass variables to Tower Workflows"
+  - name: Pass variables to Tower Workflows
     set_stats:
       data:
         vm_name: "{{ vm_name }}"
