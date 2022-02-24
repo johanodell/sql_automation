@@ -1,7 +1,7 @@
 ---
 collections:
   - name: redhat.rhel_system_roles
-    version: 1.7.3
+    #version: 1.7.3
     src: https://console.redhat.com/api/automation-hub/
   
   - name: redhatinsights.insights
